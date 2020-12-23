@@ -1,0 +1,36 @@
+/* Pages Styles*/
+#nosotrosPage, .page {
+    main{
+        min-height: 100vh;
+        padding-bottom: 2rem;
+    }
+    h1,h2{
+        padding: 2rem;
+    }
+}
+
+#nosotrosPage {
+    text-align: center;
+    #nosotrosHistoria {
+        margin: auto;
+        width: 70%;
+        text-align: justify;
+    }
+    section ul{
+        @extend #nosotrosHistoria
+    }
+    ul li {
+        text-align: left;
+    }
+    
+}
+
+#faqAccordion{
+    .btn {
+        font-size: 2rem ;
+        &:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgb(22,165,163);
+        }
+    }
+}

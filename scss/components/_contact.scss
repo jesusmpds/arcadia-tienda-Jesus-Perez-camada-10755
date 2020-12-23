@@ -1,0 +1,23 @@
+/* Contact Styles*/
+
+label, input, select,textarea {
+    display: block;
+}
+
+#my-contact-newsletter, form > label:nth-child(16) {
+    display: inline;
+}
+
+#contactPage {
+    section form{
+        margin: auto;
+        width: 70%;
+    }
+    form label{
+        margin: 10px 0;
+    }
+}
+
+.sendForm, .cleanForm {
+    display: inline;
+}

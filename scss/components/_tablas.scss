@@ -1,0 +1,37 @@
+/*  Tablas  */
+
+/* Tabla de talles*/
+
+.guiaTalles{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    tr{
+        border: 1px solid black;
+        td:first-child  {
+            color: white;
+            background-color: #DA2864;
+            font-size: 1.5rem;
+            text-align: left;
+            font-family: $content-font;
+        }
+    }
+    td{
+        border: 1px solid black;
+        text-align: center;
+    }
+    th{
+        background-color: #DA2864;
+        color: white;
+        font-size: 1.5rem;
+        font-family: $content-font;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .guiaTalles th,.guiaTalles tr td:first-child{
+        font-size: 1rem;
+    }
+    
+}
