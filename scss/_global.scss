@@ -3,25 +3,10 @@ body{
     font-family: $title-font;
 }
 
-$headings: ("1":"3rem","2":"2rem","3":"1.5rem","4":"1rem");
-
-@each $heading, $fontSize in $headings{
-    h#{$heading}{
-        color:$dark-green;
-        font-family: $content-font;
-        font-size: #{$fontSize};
-    }
-
-}
-
-@for $i from 1 through 4 {
-    h#{$i}{font-size: 3rem - 0.5;}
-}
-
-/* h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     color:$dark-green;
     font-family: $content-font;
-}*/
+}
 
 h1 {
     text-align: center;
@@ -55,9 +40,6 @@ a {
 hr{
     border-top: 1px solid rgb(13, 102, 101);
 }
-
-
-
 
 .btn-primary{
     background-color:$dark-green;
@@ -133,7 +115,17 @@ footer {
     text-align: left;
     background-color: $background-green;
     width: 100%;
-    padding: 1rem;
+        div.footerPrimary{
+            &:first-child {
+                padding: 1rem;
+            }
+            div{
+                h3{
+                    color:$dark-text;
+                    ;
+                }
+            }
+        }
         ul li{
             list-style-type: none;
             span, a {
@@ -145,6 +137,13 @@ footer {
         }
         h4{
             color:$dark-text;
+        }
+        .footerSecondary {
+            background-color: $dark-green;
+                p{
+                    color: $light-text;
+                    margin-bottom:0;
+                }
         }
 }
     
