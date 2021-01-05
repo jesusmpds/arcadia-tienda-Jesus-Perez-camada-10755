@@ -4,18 +4,17 @@ label, input, select,textarea {
     display: block;
 }
 
-#my-contact-newsletter, form > label:nth-child(16) {
-    display: inline;
-}
-
 #contactPage {
-    section form{
-        margin: auto;
-        width: 70%;
-    }
-    form label{
-        margin: 10px 0;
-    }
+    form{
+        label{
+            margin: 10px 0;
+        }
+        @media (max-width: 350px) {
+            #contactButtons input{
+                margin-top: 0.5rem;
+            }
+        }
+    } 
 }
 
 .sendForm, .cleanForm {
