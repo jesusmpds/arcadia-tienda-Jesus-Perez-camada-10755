@@ -4,6 +4,9 @@
     background-color:#ffeadb;
     .carousel-caption {
         bottom:40%;
+        @media (max-width:362px) {
+            bottom:30%;
+        }
         h1{
             color: $light-text;
         }

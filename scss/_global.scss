@@ -1,11 +1,14 @@
 body{
-    font-size: calc(0.80rem + 1vmin);
-    font-family: $title-font;
+    font-size: 1rem;
+    font-family: $content-font;
+        @media (max-width: 768px) {
+            font-size: calc(0.80rem + 1vmin)
+        }
 }
 
 h1,h2,h3,h4,h5,h6 {
     color:$dark-green;
-    font-family: $content-font;
+    font-family: $title-font;
 }
 
 h1 {
@@ -128,8 +131,10 @@ footer {
         }
         ul li{
             list-style-type: none;
+            
             span, a {
                 color:$dark-text;
+                text-decoration: none;
                 &:hover{
                     color:$dark-green;
                 }
