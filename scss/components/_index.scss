@@ -24,19 +24,22 @@
         width: fit-content;
         border-radius:5px;
     }
-    .section__div .section__img{
-        width:240px;
-        height:290px;
-        border-radius:5px;
-    }
-    .section__div .section__text{
-        padding: 2rem;
-        text-align: justify;
+    .section__div {
+        .section__img{
+            width:240px;
+            height:290px;
+            border-radius:5px;
+        }
+        .section__text{
+            padding: 2rem;
+            text-align: justify;
+            
+        }
         .section__button{
             display: block;
-            margin-top: 1rem;
+            margin: 1rem 2rem 2rem 1rem;
         }
-    }
+    }    
 }
 
 #prendasIndex{
