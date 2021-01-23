@@ -31,13 +31,10 @@ p {
 }
 
 a {
-    color:$dark-green;
-    text-decoration: underline;
-    &:hover{
-        color: $dark-fucsia;
-        letter-spacing: 1.1px;
-        transition: all 0.5s;
-    }
+    @include text-link;
+        &:hover{
+            letter-spacing: 0;
+        }
 }
 
 hr{
@@ -66,6 +63,7 @@ hr{
     color: $dark-green;
     &:hover{
         color: $dark-fucsia;
+        text-decoration: none;
     }
 }
 
@@ -119,24 +117,34 @@ footer {
     background-color: $background-green;
     width: 100%;
         div.footerPrimary{
-            &:first-child {
-                padding: 1rem;
-            }
+            padding: 1rem;
             div{
                 h3{
                     color:$dark-text;
-                    ;
                 }
-            }
-        }
-        ul li{
-            list-style-type: none;
-            
-            span, a {
-                color:$dark-text;
-                text-decoration: none;
-                &:hover{
-                    color:$dark-green;
+                a,span{
+                    text-decoration: none;
+                    .icon-whatsapp, .icon-instagram{
+                        font-size: 2rem;
+                        color: $light-text;
+                        &:hover{
+                            color:$dark-fucsia;
+                            letter-spacing: 0px
+                        }
+                    }
+                    &:hover{
+                        letter-spacing: 0;
+                    }
+                }
+                ul li{
+                    list-style-type: none;
+                    span, a {
+                        @include text-link;
+                        color:$dark-text;
+                        &:hover{
+                            color:$dark-green;
+                        }
+                    }
                 }
             }
         }
@@ -151,4 +159,3 @@ footer {
                 }
         }
 }
-    
