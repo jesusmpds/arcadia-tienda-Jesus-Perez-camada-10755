@@ -27,6 +27,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-transfer_within_a_station:before {
+    content: "\e900";
+  }
+  .icon-lunch_dining:before {
+    content: "\e901";
+  }
+  .icon-apparel:before {
+    content: "\e902";
+  }
+  .icon-book-reference:before {
+    content: "\e903";
+  }
   .icon-cart:before {
     content: "\e93a";
   }
@@ -41,6 +53,12 @@
   }
   .icon-search:before {
     content: "\e986";
+  }
+  .icon-spoon-knife:before {
+    content: "\e9a3";
+  }
+  .icon-accessibility:before {
+    content: "\e9b2";
   }
   .icon-instagram:before {
     content: "\ea92";
