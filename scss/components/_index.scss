@@ -55,12 +55,15 @@
         font-weight: bold;
     }
     .card {
-    
     height:100%;
     }
     
     .card-img{
         object-fit: cover;
         height: 100%;
+    }
+    button {
+        position: absolute;
+        bottom: 15px;
     }
 }

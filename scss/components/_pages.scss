@@ -1,26 +1,31 @@
 /* Pages Styles*/
-#nosotrosPage, .page {
+.page {
     main{
         min-height: 100vh;
-        padding-bottom: 2rem;
     }
     h1{
-        padding: 2rem;
+        padding:2rem;
     }
 }
 
 #nosotrosPage {
-    text-align: center;
-    #nosotrosHistoria {
-        margin: auto;
-        width: 70%;
-        text-align: justify;
-    }
-    section ul{
-        @extend #nosotrosHistoria
-    }
     ul li {
         text-align: left;
+    }
+    h2 {
+        padding:2rem;
+    }
+    .card{
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+        &:hover i {
+            color:$dark-green;
+        }
+        i {
+            font-size:2rem;
+            color:$dark-fucsia;
+        }
     }
 }
 
