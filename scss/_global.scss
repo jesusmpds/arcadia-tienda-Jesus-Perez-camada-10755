@@ -90,11 +90,7 @@ header {
 }
 
 header a {
-    text-decoration: none;
-    &:hover{
-        text-decoration: none;
-    }
-    
+    @include text-link;
 }
 
 .navbar-dark{
